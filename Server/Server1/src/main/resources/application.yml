@@ -1,0 +1,28 @@
+server:
+  port: 8085
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    #单文件上传最大大小，默认1MB
+    max-file-size: 10MB
+    #多文件上传时最大大小,默认10Mb
+    max-request-size: 30MB
+  mvc:
+    static-path-pattern= /**:
+file-save-path: F://images/
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.example.database.entity
+
+#showSql
+logging:
+  level:
+    com.example.database.mapper: debug

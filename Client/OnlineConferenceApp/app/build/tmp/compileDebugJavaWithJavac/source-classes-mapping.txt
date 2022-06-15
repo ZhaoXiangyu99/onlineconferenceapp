@@ -1,0 +1,167 @@
+com/dds/core/consts/Urls.java
+ com.dds.core.consts.Urls
+com/dds/core/MainActivity.java
+ com.dds.core.MainActivity
+com/dds/core/voip/SingleCallFragment.java
+ com.dds.core.voip.SingleCallFragment
+ com.dds.core.voip.SingleCallFragment$1
+ com.dds.core.voip.SingleCallFragment$CallHandler
+ com.dds.core.voip.SingleCallFragment$HeadsetPlugReceiver
+com/dds/net/http/HttpRequest.java
+ com.dds.net.http.HttpRequest
+com/dds/core/socket/SocketManager.java
+ com.dds.core.socket.SocketManager
+ com.dds.core.socket.SocketManager$1
+ com.dds.core.socket.SocketManager$Holder
+com/dds/core/util/OSUtils.java
+ com.dds.core.util.OSUtils
+com/dds/core/voip/CallSingleActivity.java
+ com.dds.core.voip.CallSingleActivity
+com/dds/core/util/Utils.java
+ com.dds.core.util.Utils
+com/dds/core/socket/IUserState.java
+ com.dds.core.socket.IUserState
+com/dds/core/voip/SettingsCompat.java
+ com.dds.core.voip.SettingsCompat
+com/dds/permission/Consumer.java
+ com.dds.permission.Consumer
+com/dds/core/ui/room/RoomViewModel.java
+ com.dds.core.ui.room.RoomViewModel
+ com.dds.core.ui.room.RoomViewModel$1
+com/dds/net/filetransport/upload/ItemBean.java
+ com.dds.net.filetransport.upload.ItemBean
+com/dds/net/urlconn/UrlConnUtils.java
+ com.dds.net.urlconn.UrlConnUtils
+ com.dds.net.urlconn.UrlConnUtils$1
+com/dds/core/ui/user/UserListFragment.java
+ com.dds.core.ui.user.UserListFragment
+ com.dds.core.ui.user.UserListFragment$1
+ com.dds.core.ui.user.UserListFragment$Holder
+ com.dds.core.ui.user.UserListFragment$UserAdapter
+com/dds/net/filetransport/upload/UploadActivity.java
+ com.dds.net.filetransport.upload.UploadActivity
+ com.dds.net.filetransport.upload.UploadActivity$1
+ com.dds.net.filetransport.upload.UploadActivity$2
+ com.dds.net.filetransport.upload.UploadActivity$ActivityViewHolder
+ com.dds.net.filetransport.upload.UploadActivity$MyHandler
+com/dds/core/page/Login.java
+ com.dds.core.page.Login
+ com.dds.core.page.Login$1
+ com.dds.core.page.Login$2
+ com.dds.core.page.Login$2$1
+ com.dds.core.page.Login$2$1$1
+ com.dds.core.page.Login$2$2
+com/dds/net/filetransport/upload/GridDividerItemDecoration.java
+ com.dds.net.filetransport.upload.GridDividerItemDecoration
+com/dds/net/urlconn/UrlConnRequest.java
+ com.dds.net.urlconn.UrlConnRequest
+com/dds/core/socket/MyWebSocket.java
+ com.dds.core.socket.MyWebSocket
+ com.dds.core.socket.MyWebSocket$TrustManagerTest
+com/dds/core/ui/room/RoomInfo.java
+ com.dds.core.ui.room.RoomInfo
+com/dds/core/util/ActivityStackManager.java
+ com.dds.core.util.ActivityStackManager
+com/dds/core/ui/setting/SettingFragment.java
+ com.dds.core.ui.setting.SettingFragment
+com/dds/net/filetransport/download/ImageViewPage.java
+ com.dds.net.filetransport.download.ImageViewPage
+ com.dds.net.filetransport.download.ImageViewPage$1
+ com.dds.net.filetransport.download.ImageViewPage$ImageHandler
+com/dds/core/voip/NineGridView.java
+ com.dds.core.voip.NineGridView
+com/dds/core/voip/FragmentVideo.java
+ com.dds.core.voip.FragmentVideo
+com/dds/net/filetransport/upload/LoadImageAdapter.java
+ com.dds.net.filetransport.upload.LoadImageAdapter
+ com.dds.net.filetransport.upload.LoadImageAdapter$1
+ com.dds.net.filetransport.upload.LoadImageAdapter$2
+ com.dds.net.filetransport.upload.LoadImageAdapter$ButtonViewHolder
+ com.dds.net.filetransport.upload.LoadImageAdapter$ImageViewHolder
+ com.dds.net.filetransport.upload.LoadImageAdapter$OnImageItemClickListener
+com/dds/core/util/CrashHandler.java
+ com.dds.core.util.CrashHandler
+com/dds/core/ui/user/UserBean.java
+ com.dds.core.ui.user.UserBean
+com/dds/core/page/Register.java
+ com.dds.core.page.Register
+ com.dds.core.page.Register$1
+ com.dds.core.page.Register$2
+ com.dds.core.page.Register$2$1
+com/dds/core/ui/file/FileViewModel.java
+ com.dds.core.ui.file.FileViewModel
+ com.dds.core.ui.file.FileViewModel$1
+com/dds/core/voip/FloatingVoipService.java
+ com.dds.core.voip.FloatingVoipService
+ com.dds.core.voip.FloatingVoipService$1
+ com.dds.core.voip.FloatingVoipService$2
+ com.dds.core.voip.FloatingVoipService$HeadsetPlugReceiver
+com/dds/App.java
+ com.dds.App
+com/dds/core/voip/FragmentMeeting.java
+ com.dds.core.voip.FragmentMeeting
+com/dds/core/voip/VoipReceiver.java
+ com.dds.core.voip.VoipReceiver
+com/dds/core/socket/IEvent.java
+ com.dds.core.socket.IEvent
+com/dds/core/voip/CallMultiActivity.java
+ com.dds.core.voip.CallMultiActivity
+com/dds/net/http/ICallback.java
+ com.dds.net.http.ICallback
+com/dds/core/ui/file/FileFragment.java
+ com.dds.core.ui.file.FileFragment
+ com.dds.core.ui.file.FileFragment$1
+ com.dds.core.ui.file.FileFragment$FileAdapter
+ com.dds.core.ui.file.FileFragment$FileAdapter$1
+ com.dds.core.ui.file.FileFragment$Holder
+com/dds/core/consts/showMsg.java
+ com.dds.core.consts.showMsg
+com/dds/core/voip/CallForegroundNotification.java
+ com.dds.core.voip.CallForegroundNotification
+com/dds/net/filetransport/upload/FileUtils.java
+ com.dds.net.filetransport.upload.FileUtils
+com/dds/core/voip/AsyncPlayer.java
+ com.dds.core.voip.AsyncPlayer
+ com.dds.core.voip.AsyncPlayer$1
+ com.dds.core.voip.AsyncPlayer$Command
+ com.dds.core.voip.AsyncPlayer$Thread
+com/dds/core/base/BaseActivity.java
+ com.dds.core.base.BaseActivity
+com/dds/net/filetransport/upload/ImageFileBean.java
+ com.dds.net.filetransport.upload.ImageFileBean
+com/dds/net/filetransport/download/Filedownload.java
+ com.dds.net.filetransport.download.Filedownload
+com/dds/net/http/HttpRequestPresenter.java
+ com.dds.net.http.HttpRequestPresenter
+com/dds/core/voip/RomUtil.java
+ com.dds.core.voip.RomUtil
+com/dds/core/util/StringUtil.java
+ com.dds.core.util.StringUtil
+com/dds/core/voip/FragmentAudio.java
+ com.dds.core.voip.FragmentAudio
+com/dds/webrtc/BuildConfig.java
+ com.dds.webrtc.BuildConfig
+com/dds/core/ui/user/UserListViewModel.java
+ com.dds.core.ui.user.UserListViewModel
+ com.dds.core.ui.user.UserListViewModel$1
+com/dds/core/ui/event/MsgEvent.java
+ com.dds.core.ui.event.MsgEvent
+com/dds/core/ui/room/RoomFragment.java
+ com.dds.core.ui.room.RoomFragment
+ com.dds.core.ui.room.RoomFragment$1
+ com.dds.core.ui.room.RoomFragment$1$1
+ com.dds.core.ui.room.RoomFragment$Holder
+ com.dds.core.ui.room.RoomFragment$RoomAdapter
+com/dds/core/voip/Utils.java
+ com.dds.core.voip.Utils
+com/dds/core/page/WelcomePage.java
+ com.dds.core.page.WelcomePage
+com/dds/permission/Permissions.java
+ com.dds.permission.Permissions
+ com.dds.permission.Permissions$PermissionRequestFragment
+com/dds/core/ui/file/FileInfo.java
+ com.dds.core.ui.file.FileInfo
+com/dds/core/ui/setting/SettingViewModel.java
+ com.dds.core.ui.setting.SettingViewModel
+com/dds/core/voip/VoipEvent.java
+ com.dds.core.voip.VoipEvent

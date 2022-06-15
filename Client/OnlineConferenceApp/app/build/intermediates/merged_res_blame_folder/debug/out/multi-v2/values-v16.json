@@ -1,0 +1,57 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\AndroidStudioProjects\\OnlineConferenceApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-2\\files-2.1\\ca652aab1055ff9c753bdcdda75afddc\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "309",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "477"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-2\\files-2.1\\4dba384d01613e3c7713bb4444c5a79e\\core-1.3.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-2\\files-2.1\\cf28ec08a312d534084c8f146a1de675\\jetified-alerter-6.2.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "238"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "304"
+                    }
+                }
+            ]
+        }
+    ]
+}

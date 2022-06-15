@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dds.webrtc.debug"
+    android:versionCode="1001"
+    android:versionName="0.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+    <!-- 设置视频直播权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 悬浮窗显示 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <!-- 在 屏幕最顶部显示addview -->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> <!-- To allow starting foreground services on Android P+ - https://developer.android.com/preview/behavior-changes#fg-svc -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="com.dds.App"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.dds.net.filetransport.download.ImageViewPage" />
+        <activity android:name="com.dds.net.filetransport.upload.UploadActivity" />
+        <activity android:name="com.dds.net.filetransport.download.Filedownload" />
+        <activity
+            android:name="com.dds.core.page.Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.dds.core.page.Register"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.dds.core.page.WelcomePage"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dds.core.MainActivity" /> <!-- ======================java====================== -->
+        <activity
+            android:name="com.dds.core.voip.CallSingleActivity"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.dds.webrtc.debug.kit.voip.single" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dds.core.voip.CallMultiActivity"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name="com.dds.core.voip.VoipReceiver" >
+            <intent-filter>
+                <action android:name="com.dds.webrtc.debug.voip.Receiver" />
+            </intent-filter>
+        </receiver> <!-- 悬浮窗 -->
+        <service
+            android:name="com.dds.core.voip.FloatingVoipService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.dds.camera.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+
+        <service
+            android:name="leakcanary.internal.HeapAnalyzerService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" /> <!-- PermissonActivity -->
+        <activity
+            android:name="com.lxj.xpopup.util.XPermission$PermissionActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/ActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:multiprocess="true"
+            android:theme="@style/ActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:authorities="com.dds.webrtc.debug.utilcode.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/util_code_provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.dds.webrtc.debug.messenger" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="leakcanary.internal.LeakCanaryFileProvider"
+            android:authorities="com.squareup.leakcanary.fileprovider.com.dds.webrtc.debug"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/leak_canary_file_paths" />
+        </provider>
+
+        <activity
+            android:name="leakcanary.internal.activity.LeakActivity"
+            android:icon="@mipmap/leak_canary_icon"
+            android:label="@string/leak_canary_display_activity_label"
+            android:taskAffinity="com.squareup.leakcanary.com.dds.webrtc.debug"
+            android:theme="@style/leak_canary_LeakCanary.Base" />
+
+        <activity-alias
+            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+            android:banner="@drawable/leak_canary_tv_icon"
+            android:enabled="@bool/leak_canary_add_launcher_icon"
+            android:icon="@mipmap/leak_canary_icon"
+            android:label="@string/leak_canary_display_activity_label"
+            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+            android:taskAffinity="com.squareup.leakcanary.com.dds.webrtc.debug"
+            android:theme="@style/leak_canary_LeakCanary.Base" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- Android TV launcher intent -->
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="leakcanary.internal.RequestStoragePermissionActivity"
+            android:excludeFromRecents="true"
+            android:icon="@mipmap/leak_canary_icon"
+            android:label="@string/leak_canary_storage_permission_activity_label"
+            android:taskAffinity="com.squareup.leakcanary.com.dds.webrtc.debug"
+            android:theme="@style/leak_canary_Theme.Transparent" />
+
+        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+
+        <provider
+            android:name="leakcanary.internal.AppWatcherInstaller$MainProcess"
+            android:authorities="com.dds.webrtc.debug.leakcanary-installer"
+            android:enabled="@bool/leak_canary_watcher_auto_install"
+            android:exported="false" />
+        <provider
+            android:name="leakcanary.internal.PlumberInstaller"
+            android:authorities="com.dds.webrtc.debug.plumber-installer"
+            android:enabled="@bool/leak_canary_plumber_auto_install"
+            android:exported="false" />
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.dds.webrtc.debug.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

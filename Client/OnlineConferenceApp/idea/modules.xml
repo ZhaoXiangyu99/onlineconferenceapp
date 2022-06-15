@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/OnlineConferenceApp.iml" filepath="$PROJECT_DIR$/.idea/modules/OnlineConferenceApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OnlineConferenceApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OnlineConferenceApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libwebrtc/OnlineConferenceApp.libwebrtc.iml" filepath="$PROJECT_DIR$/.idea/modules/libwebrtc/OnlineConferenceApp.libwebrtc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rtc-chat/OnlineConferenceApp.rtc-chat.iml" filepath="$PROJECT_DIR$/.idea/modules/rtc-chat/OnlineConferenceApp.rtc-chat.iml" />
+    </modules>
+  </component>
+</project>

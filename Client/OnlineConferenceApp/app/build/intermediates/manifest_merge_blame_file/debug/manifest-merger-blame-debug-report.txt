@@ -1,0 +1,403 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dds.webrtc.debug"
+4    android:versionCode="1001"
+5    android:versionName="0.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml
+10    <!-- 设置视频直播权限 -->
+11    <uses-feature android:name="android.hardware.camera" />
+11-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:6:5-60
+11-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:6:19-57
+12    <uses-feature android:name="android.hardware.camera.autofocus" />
+12-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:7:5-70
+12-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:7:19-67
+13    <uses-feature
+13-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:8:5-10:35
+14        android:glEsVersion="0x00020000"
+14-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:9:9-41
+15        android:required="true" />
+15-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:10:9-32
+16
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:12:5-81
+17-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:12:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:13:5-80
+18-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:13:22-77
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:14:5-65
+19-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:14:22-62
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:15:5-71
+20-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:15:22-68
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:16:5-67
+21-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:16:22-64
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:17:5-79
+22-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:17:22-76
+23    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+23-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:18:5-79
+23-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:18:22-76
+24    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+24-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:19:5-80
+24-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:19:22-77
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:12:5-81
+25-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:12:22-78
+26    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 悬浮窗显示 -->
+26-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:21:5-78
+26-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:21:22-75
+27    <uses-permission android:name="android.permission.VIBRATE" />
+27-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:22:5-66
+27-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:22:22-63
+28    <uses-permission android:name="android.permission.WAKE_LOCK" />
+28-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:23:5-68
+28-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:23:22-65
+29    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+29-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:24:5-81
+29-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:24:22-78
+30
+31    <!-- 在 屏幕最顶部显示addview -->
+32    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> <!-- To allow starting foreground services on Android P+ - https://developer.android.com/preview/behavior-changes#fg-svc -->
+32-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:14:5-80
+32-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:14:22-77
+33    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+33-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:26:5-77
+33-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:26:22-74
+34
+35    <application
+35-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:26:5-95:19
+36        android:name="com.dds.App"
+36-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:27:9-35
+37        android:allowBackup="false"
+37-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:28:9-36
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\4dba384d01613e3c7713bb4444c5a79e\core-1.3.0\AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:icon="@mipmap/launcher"
+40-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:29:9-40
+41        android:label="@string/app_name"
+41-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:30:9-41
+42        android:requestLegacyExternalStorage="true"
+42-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:19:9-52
+43        android:roundIcon="@mipmap/launcher"
+43-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:31:9-45
+44        android:supportsRtl="true"
+44-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:32:9-35
+45        android:testOnly="true"
+46        android:theme="@style/AppTheme"
+46-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:33:9-40
+47        android:usesCleartextTraffic="true" >
+47-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:34:9-44
+48        <activity android:name="com.dds.net.filetransport.download.ImageViewPage" />
+48-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:36:9-94
+48-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:36:19-82
+49        <activity android:name="com.dds.net.filetransport.upload.UploadActivity" />
+49-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:37:9-84
+49-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:37:19-81
+50        <activity android:name="com.dds.net.filetransport.download.Filedownload" />
+50-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:38:9-84
+50-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:38:19-81
+51        <activity
+51-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:39:9-41:72
+52            android:name="com.dds.core.page.Login"
+52-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:40:13-51
+53            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+53-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:41:13-69
+54        <activity
+54-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:42:9-44:72
+55            android:name="com.dds.core.page.Register"
+55-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:43:13-54
+56            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+56-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:44:13-69
+57        <activity
+57-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:45:9-55:20
+58            android:name="com.dds.core.page.WelcomePage"
+58-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:46:13-57
+59            android:label="@string/app_name"
+59-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:47:13-45
+60            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+60-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:48:13-69
+61            <intent-filter>
+61-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:49:13-54:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:50:17-69
+62-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:50:25-66
+63                <action android:name="android.intent.action.VIEW" />
+63-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:51:17-69
+63-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:51:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:53:17-77
+65-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:53:27-74
+66            </intent-filter>
+67        </activity>
+68        <activity android:name="com.dds.core.MainActivity" /> <!-- ======================java====================== -->
+68-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:56:9-62
+68-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:56:19-59
+69        <activity
+69-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:57:9-69:20
+70            android:name="com.dds.core.voip.CallSingleActivity"
+70-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:58:13-64
+71            android:screenOrientation="portrait"
+71-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:59:13-49
+72            android:showOnLockScreen="true"
+72-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:60:13-44
+73            android:showWhenLocked="true"
+73-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:61:13-42
+74            android:theme="@style/AppTheme.NoActionBar" >
+74-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:62:13-56
+75            <intent-filter>
+75-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:64:13-68:29
+76                <action android:name="com.dds.webrtc.debug.kit.voip.single" />
+76-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:65:25-72
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:67:17-76
+78-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:67:27-73
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:70:9-74:59
+82            android:name="com.dds.core.voip.CallMultiActivity"
+82-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:71:13-63
+83            android:screenOrientation="portrait"
+83-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:72:13-49
+84            android:showOnLockScreen="true"
+84-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:73:13-44
+85            android:theme="@style/AppTheme.NoActionBar" />
+85-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:74:13-56
+86
+87        <receiver android:name="com.dds.core.voip.VoipReceiver" >
+87-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:76:9-80:20
+87-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:76:19-64
+88            <intent-filter>
+88-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:77:13-79:29
+89                <action android:name="com.dds.webrtc.debug.voip.Receiver" />
+89-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:78:25-70
+90            </intent-filter>
+91        </receiver> <!-- 悬浮窗 -->
+92        <service
+92-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:81:9-84:39
+93            android:name="com.dds.core.voip.FloatingVoipService"
+93-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:82:13-65
+94            android:enabled="true"
+94-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:83:13-35
+95            android:exported="true" />
+95-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:84:13-36
+96
+97        <provider
+97-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:86:9-94:20
+98            android:name="androidx.core.content.FileProvider"
+98-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:87:13-62
+99            android:authorities="com.dds.camera.fileprovider"
+99-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:88:13-62
+100            android:exported="false"
+100-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:89:13-37
+101            android:grantUriPermissions="true" >
+101-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:90:13-47
+102            <meta-data
+102-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:91:13-93:56
+103                android:name="android.support.FILE_PROVIDER_PATHS"
+103-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:92:17-67
+104                android:resource="@xml/fileprovider" />
+104-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:93:17-53
+105        </provider>
+106
+107        <service
+107-->[com.squareup.leakcanary:leakcanary-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\b04307c44519d2c9066086c6b6aa3c3b\jetified-leakcanary-android-2.4\AndroidManifest.xml:23:9-25:40
+108            android:name="leakcanary.internal.HeapAnalyzerService"
+108-->[com.squareup.leakcanary:leakcanary-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\b04307c44519d2c9066086c6b6aa3c3b\jetified-leakcanary-android-2.4\AndroidManifest.xml:24:13-67
+109            android:exported="false" />
+109-->[com.squareup.leakcanary:leakcanary-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\b04307c44519d2c9066086c6b6aa3c3b\jetified-leakcanary-android-2.4\AndroidManifest.xml:25:13-37
+110
+111        <meta-data
+111-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:21:9-23:36
+112            android:name="android.notch_support"
+112-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:22:13-49
+113            android:value="true" /> <!-- PermissonActivity -->
+113-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:23:13-33
+114        <activity
+114-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:25:9-27:75
+115            android:name="com.lxj.xpopup.util.XPermission$PermissionActivity"
+115-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:26:13-78
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.lxj:xpopup:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\d4abcafbc6a98acd381ffbe197d362f5\jetified-xpopup-2.2.0\AndroidManifest.xml:27:13-72
+117        <activity
+117-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:10:9-14:75
+118            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+118-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:11:13-83
+119            android:configChanges="orientation|keyboardHidden|screenSize"
+119-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:12:13-74
+120            android:theme="@style/ActivityTranslucent"
+120-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:13:13-55
+121            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+121-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:14:13-72
+122        <activity
+122-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:15:9-20:75
+123            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+123-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:16:13-71
+124            android:configChanges="orientation|keyboardHidden|screenSize"
+124-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:17:13-74
+125            android:multiprocess="true"
+125-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:18:13-40
+126            android:theme="@style/ActivityTranslucent"
+126-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:19:13-55
+127            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+127-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:20:13-72
+128
+129        <provider
+129-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:22:9-30:20
+130            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+130-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:23:13-70
+131            android:authorities="com.dds.webrtc.debug.utilcode.provider"
+131-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:24:13-69
+132            android:exported="false"
+132-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:25:13-37
+133            android:grantUriPermissions="true" >
+133-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:26:13-47
+134            <meta-data
+134-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:91:13-93:56
+135                android:name="android.support.FILE_PROVIDER_PATHS"
+135-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:92:17-67
+136                android:resource="@xml/util_code_provider_paths" />
+136-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:93:17-53
+137        </provider>
+138
+139        <service
+139-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:32:9-38:19
+140            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+140-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:33:13-81
+141            android:exported="false" >
+141-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:34:13-37
+142            <intent-filter>
+142-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:35:13-37:29
+143                <action android:name="com.dds.webrtc.debug.messenger" />
+143-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:36:17-69
+143-->[com.blankj:utilcodex:1.30.5] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f2c7342fb45370869dec0e734176001b\jetified-utilcodex-1.30.5\AndroidManifest.xml:36:25-66
+144            </intent-filter>
+145        </service>
+146
+147        <provider
+147-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:29:9-37:20
+148            android:name="leakcanary.internal.LeakCanaryFileProvider"
+148-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:30:13-70
+149            android:authorities="com.squareup.leakcanary.fileprovider.com.dds.webrtc.debug"
+149-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:31:13-88
+150            android:exported="false"
+150-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:32:13-37
+151            android:grantUriPermissions="true" >
+151-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:33:13-47
+152            <meta-data
+152-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:91:13-93:56
+153                android:name="android.support.FILE_PROVIDER_PATHS"
+153-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:92:17-67
+154                android:resource="@xml/leak_canary_file_paths" />
+154-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:93:17-53
+155        </provider>
+156
+157        <activity
+157-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:39:9-44:66
+158            android:name="leakcanary.internal.activity.LeakActivity"
+158-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:40:13-69
+159            android:icon="@mipmap/leak_canary_icon"
+159-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:41:13-52
+160            android:label="@string/leak_canary_display_activity_label"
+160-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:42:13-71
+161            android:taskAffinity="com.squareup.leakcanary.com.dds.webrtc.debug"
+161-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:43:13-76
+162            android:theme="@style/leak_canary_LeakCanary.Base" />
+162-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:44:13-63
+163
+164        <activity-alias
+164-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:46:9-62:26
+165            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+165-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:47:13-77
+166            android:banner="@drawable/leak_canary_tv_icon"
+166-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:48:13-59
+167            android:enabled="@bool/leak_canary_add_launcher_icon"
+167-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:49:13-66
+168            android:icon="@mipmap/leak_canary_icon"
+168-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:50:13-52
+169            android:label="@string/leak_canary_display_activity_label"
+169-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:51:13-71
+170            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+170-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:52:13-79
+171            android:taskAffinity="com.squareup.leakcanary.com.dds.webrtc.debug"
+171-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:53:13-76
+172            android:theme="@style/leak_canary_LeakCanary.Base" >
+172-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:54:13-63
+173            <intent-filter>
+173-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:55:13-61:29
+174                <action android:name="android.intent.action.MAIN" />
+174-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:50:17-69
+174-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:50:25-66
+175
+176                <category android:name="android.intent.category.LAUNCHER" />
+176-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:53:17-77
+176-->F:\AndroidStudioProjects\OnlineConferenceApp\app\src\main\AndroidManifest.xml:53:27-74
+177                <!-- Android TV launcher intent -->
+178                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+178-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:60:17-86
+178-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:60:27-83
+179            </intent-filter>
+180        </activity-alias>
+181
+182        <activity
+182-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:64:9-70:68
+183            android:name="leakcanary.internal.RequestStoragePermissionActivity"
+183-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:65:13-80
+184            android:excludeFromRecents="true"
+184-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:66:13-46
+185            android:icon="@mipmap/leak_canary_icon"
+185-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:67:13-52
+186            android:label="@string/leak_canary_storage_permission_activity_label"
+186-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:68:13-82
+187            android:taskAffinity="com.squareup.leakcanary.com.dds.webrtc.debug"
+187-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:69:13-76
+188            android:theme="@style/leak_canary_Theme.Transparent" />
+188-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:70:13-65
+189
+190        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+190-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:72:9-77
+190-->[com.squareup.leakcanary:leakcanary-android-core:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\fb78ef55aa4e81d86334fcbb107a3855\jetified-leakcanary-android-core-2.4\AndroidManifest.xml:72:19-74
+191
+192        <provider
+192-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\15c0bfd8826087c6db4ccba07ecc9156\jetified-leakcanary-object-watcher-android-2.4\AndroidManifest.xml:8:9-12:40
+193            android:name="leakcanary.internal.AppWatcherInstaller$MainProcess"
+193-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\15c0bfd8826087c6db4ccba07ecc9156\jetified-leakcanary-object-watcher-android-2.4\AndroidManifest.xml:9:13-79
+194            android:authorities="com.dds.webrtc.debug.leakcanary-installer"
+194-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\15c0bfd8826087c6db4ccba07ecc9156\jetified-leakcanary-object-watcher-android-2.4\AndroidManifest.xml:10:13-72
+195            android:enabled="@bool/leak_canary_watcher_auto_install"
+195-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\15c0bfd8826087c6db4ccba07ecc9156\jetified-leakcanary-object-watcher-android-2.4\AndroidManifest.xml:11:13-69
+196            android:exported="false" />
+196-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\15c0bfd8826087c6db4ccba07ecc9156\jetified-leakcanary-object-watcher-android-2.4\AndroidManifest.xml:12:13-37
+197        <provider
+197-->[com.squareup.leakcanary:plumber-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\5b1941856eca6699f1a3205add348a31\jetified-plumber-android-2.4\AndroidManifest.xml:8:9-12:40
+198            android:name="leakcanary.internal.PlumberInstaller"
+198-->[com.squareup.leakcanary:plumber-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\5b1941856eca6699f1a3205add348a31\jetified-plumber-android-2.4\AndroidManifest.xml:9:13-64
+199            android:authorities="com.dds.webrtc.debug.plumber-installer"
+199-->[com.squareup.leakcanary:plumber-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\5b1941856eca6699f1a3205add348a31\jetified-plumber-android-2.4\AndroidManifest.xml:10:13-69
+200            android:enabled="@bool/leak_canary_plumber_auto_install"
+200-->[com.squareup.leakcanary:plumber-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\5b1941856eca6699f1a3205add348a31\jetified-plumber-android-2.4\AndroidManifest.xml:11:13-69
+201            android:exported="false" />
+201-->[com.squareup.leakcanary:plumber-android:2.4] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\5b1941856eca6699f1a3205add348a31\jetified-plumber-android-2.4\AndroidManifest.xml:12:13-37
+202        <provider
+202-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\6b73ae47e1b700645a15037d8d7778b7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+203            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+203-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\6b73ae47e1b700645a15037d8d7778b7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+204            android:authorities="com.dds.webrtc.debug.lifecycle-process"
+204-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\6b73ae47e1b700645a15037d8d7778b7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+205            android:exported="false"
+205-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\6b73ae47e1b700645a15037d8d7778b7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+206            android:multiprocess="true" />
+206-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\6b73ae47e1b700645a15037d8d7778b7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+207    </application>
+208
+209</manifest>

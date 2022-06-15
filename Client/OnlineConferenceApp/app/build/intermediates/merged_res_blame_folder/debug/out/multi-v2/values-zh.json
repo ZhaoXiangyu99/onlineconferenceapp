@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\AndroidStudioProjects\\OnlineConferenceApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-2\\files-2.1\\d4abcafbc6a98acd381ffbe197d362f5\\jetified-xpopup-2.2.0\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,100,141",
+                        "endColumns": "44,40,42",
+                        "endOffsets": "95,136,179"
+                    }
+                }
+            ]
+        }
+    ]
+}

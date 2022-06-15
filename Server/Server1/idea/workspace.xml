@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f43a1da-113b-4edd-9cd2-65125ed25b29" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1s0tQSNgkjqClVMm6Ga4Tvor0z6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Server2" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="DatabaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="database" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.database.DatabaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f43a1da-113b-4edd-9cd2-65125ed25b29" name="Default Changelist" comment="" />
+      <created>1620021318534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620021318534</updated>
+      <workItem from="1620021324347" duration="14986000" />
+      <workItem from="1620104045266" duration="1575000" />
+      <workItem from="1620131911299" duration="7000" />
+      <workItem from="1620278557023" duration="3805000" />
+      <workItem from="1620294103515" duration="1263000" />
+      <workItem from="1620368407633" duration="750000" />
+      <workItem from="1620391450308" duration="2540000" />
+      <workItem from="1620450502272" duration="992000" />
+      <workItem from="1620629344716" duration="20000" />
+      <workItem from="1620632810621" duration="9000" />
+      <workItem from="1621164210264" duration="1285000" />
+      <workItem from="1621582940715" duration="889000" />
+      <workItem from="1621598950012" duration="327000" />
+      <workItem from="1621599406468" duration="380000" />
+      <workItem from="1621600077196" duration="529000" />
+      <workItem from="1621601420447" duration="82000" />
+      <workItem from="1622358815911" duration="1383000" />
+      <workItem from="1622460255383" duration="1053000" />
+      <workItem from="1622694599164" duration="924000" />
+      <workItem from="1622699683728" duration="74000" />
+      <workItem from="1622699966991" duration="649000" />
+      <workItem from="1622707933741" duration="3008000" />
+      <workItem from="1623328679007" duration="120000" />
+      <workItem from="1641719696333" duration="4580000" />
+      <workItem from="1641794342761" duration="2774000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1641720390095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1641720390095" />
+  </component>
+</project>
